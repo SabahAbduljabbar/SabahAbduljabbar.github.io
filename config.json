@@ -2,29 +2,29 @@
   "theme": {
     "name": "TabTheme",
     "styles": [
-      "default",
-      "simpleblue",
-      "purple",
-      "red",
+      "cyan",
       "yellow",
       "green",
-      "blue",
-      "cyan"
+      "simpleblue",
+      "red",
+      "default",
+      "purple",
+      "blue"
     ],
     "version": "2.5",
     "sharedTheme": {
+      "isPortalSupport": false,
       "useHeader": false,
-      "useLogo": false,
-      "isPortalSupport": false
+      "useLogo": false
     },
     "customStyles": {
-      "mainBackgroundColor": ""
+      "mainBackgroundColor": "#6a5acd"
     }
   },
   "portalUrl": "http://mohawkarcgis.maps.arcgis.com",
   "appId": "",
   "authorizedCrossOriginDomains": [],
-  "title": "Assignment 4 Map",
+  "title": "Fire Stations in Hamilton",
   "subtitle": "with Web AppBuilder for ArcGIS",
   "keepAppState": true,
   "logo": "images/app-logo.png",
@@ -90,7 +90,8 @@
         },
         "version": "2.5",
         "id": "widgets_Scalebar_Widget_24",
-        "name": "Scalebar"
+        "name": "Scalebar",
+        "config": "configs/Scalebar/config_Scalebar.json"
       },
       {
         "uri": "widgets/Search/Widget",
@@ -123,7 +124,12 @@
           "relativeTo": "map"
         },
         "placeholderIndex": 1,
-        "id": "_27"
+        "id": "_27",
+        "name": "Chart",
+        "version": "2.5",
+        "closeable": true,
+        "uri": "widgets/Chart/Widget",
+        "config": "configs/Chart/config_Chart.json"
       },
       {
         "position": {
@@ -133,8 +139,13 @@
           "height": 410,
           "relativeTo": "map"
         },
-        "placeholderIndex": 2,
-        "id": "_28"
+        "placeholderIndex": 1,
+        "id": "_28",
+        "name": "Select",
+        "version": "2.5",
+        "closeable": true,
+        "uri": "widgets/Select/Widget",
+        "config": "configs/Select/config_Select.json"
       },
       {
         "position": {
@@ -144,8 +155,13 @@
           "height": 410,
           "relativeTo": "map"
         },
-        "placeholderIndex": 3,
-        "id": "_29"
+        "placeholderIndex": 1,
+        "id": "_29",
+        "name": "AddData",
+        "version": "2.5",
+        "closeable": true,
+        "uri": "widgets/AddData/Widget",
+        "config": "configs/AddData/config_AddData.json"
       },
       {
         "uri": "widgets/OverviewMap/Widget",
@@ -241,7 +257,7 @@
       "bottom": 24,
       "left": 55
     },
-    "itemId": "4e64b3c7477948f8bc488e6026dec86d",
+    "itemId": "14fa804bc40e4f23b75788e8bc62a166",
     "mapOptions": {},
     "id": "map",
     "portalUrl": "http://mohawkarcgis.maps.arcgis.com",
@@ -275,38 +291,43 @@
         "index": 3
       },
       {
-        "name": "Measure",
-        "version": "2.4",
-        "uri": "widgets/Measure/Widget",
-        "config": "configs/Measure/config_Measure.json",
+        "name": "Draw",
+        "version": "2.5",
+        "uri": "widgets/Draw/Widget",
+        "config": "configs/Draw/config_Draw.json",
         "index": 4,
-        "id": "widgets_Measure_Widget_37"
+        "id": "widgets_Draw_Widget_37"
       },
       {
-        "name": "CoordinateConversion",
-        "version": "1.4",
-        "keepConfigAfterMapSwithched": false,
-        "uri": "widgets/CoordinateConversion/Widget",
-        "config": "configs/CoordinateConversion/config_CoordinateConversion.json",
+        "name": "Directions",
+        "version": "2.5",
+        "uri": "widgets/Directions/Widget",
+        "config": "configs/Directions/config_Directions.json",
         "index": 5,
-        "id": "widgets_CoordinateConversion_Widget_38"
+        "id": "widgets_Directions_Widget_38"
       },
       {
-        "name": "FilterEditor",
-        "version": "1.4",
-        "keepConfigAfterMapSwithched": false,
-        "uri": "widgets/FilterEditor/Widget",
-        "config": "configs/FilterEditor/config_FilterEditor.json",
+        "name": "Print",
+        "version": "2.5",
+        "uri": "widgets/Print/Widget",
+        "config": "configs/Print/config_Print.json",
         "index": 6,
-        "id": "widgets_FilterEditor_Widget_39"
+        "id": "widgets_Print_Widget_39"
       },
       {
-        "name": "PopupPanel",
-        "version": "2.4",
-        "uri": "widgets/PopupPanel/Widget",
-        "config": "configs/PopupPanel/config_PopupPanel.json",
+        "name": "GroupFilter",
+        "version": "2.5",
+        "keepConfigAfterMapSwithched": false,
+        "uri": "widgets/GroupFilter/Widget",
         "index": 8,
-        "id": "widgets_PopupPanel_Widget_40"
+        "id": "widgets_GroupFilter_Widget_40"
+      },
+      {
+        "name": "Stream",
+        "version": "2.5",
+        "uri": "widgets/Stream/Widget",
+        "index": 9,
+        "id": "widgets_Stream_Widget_41"
       }
     ],
     "groups": []
